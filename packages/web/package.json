@@ -1,0 +1,29 @@
+{
+  "name": "@titkok/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start -p 8080"
+  },
+  "dependencies": {
+    "@tiktok/ui": "0.0.1",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "cookie": "^0.4.0",
+    "jwt-decode": "^2.2.0",
+    "next": "9.1.1",
+    "next-redux-wrapper": "^4.0.1",
+    "node-sass": "^4.13.0",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "styled-jsx-plugin-sass": "^1.0.0"
+  }
+}

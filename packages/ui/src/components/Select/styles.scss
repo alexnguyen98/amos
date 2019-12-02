@@ -1,0 +1,50 @@
+@import '../../styles/colors';
+
+.input {
+  width: 100%;
+  margin-bottom: 5px;
+  &.inline {
+    display: flex;
+    .wrapper {
+      margin-left: auto;
+      min-width: 20rem;
+    }
+  }
+  label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: .9rem;
+  }
+  p {
+    font-size: .9rem;
+    margin-top: 3px;
+    color: $grey-1;
+  }
+  .wrapper {
+    padding: 8px 15px;
+    border: 2px solid $white-4;
+    position: relative;
+    &.focused{
+      border-color: darken($primary-2, 10%)
+    }
+    select {
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      outline: none;
+      width: 100%;
+    }
+    i {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      z-index: -1;
+      transform: translateY(-50%);
+      color: $grey-1;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "@tiktok/ui",
+  "version": "0.0.1",
+  "description": "Petgogo design system - react component library",
+  "scripts": {
+    "generate-icon": "node scripts/iconIndex.js",
+    "generate-component": "node scripts/componentIndex.js",
+    "gulp": "gulp style --gulpfile scripts/gulpfile.js",
+    "rollup": "rollup -c scripts/rollup.config.js",
+    "build": "rm -rf dist && yarn generate-icon && yarn generate-component && yarn rollup && yarn gulp",
+    "storybook": "yarn generate-icon && yarn generate-component && start-storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexsexotic <alexnguyen98@yahoo.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-info": "^5.2.5",
+    "@storybook/addon-knobs": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
+    "@svgr/rollup": "^4.3.3",
+    "@svgr/webpack": "^4.3.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "classnames": "^2.2.6",
+    "css-loader": "^3.2.0",
+    "glob": "^7.1.5",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "merge-stream": "^2.0.0",
+    "node-sass": "^4.13.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-simple-vars": "^5.0.2",
+    "prop-types": "^15.7.2",
+    "rollup": "^1.26.3",
+    "rollup-plugin-analyzer": "^3.2.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "sass-loader": "^8.0.0",
+    "standard-version": "^7.0.0",
+    "style-loader": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.11.0"
+  },
+  "dependencies": {
+    "react-calendar": "^2.19.2",
+    "ui": "^0.2.4"
+  }
+}

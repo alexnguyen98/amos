@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+@import '../../styles/shadows';
+
+.banner {
+  max-width: 30rem;;
+  width: 100%;
+  padding: 10px 15px;
+  box-shadow: $shadow-2;
+  border: 2px solid $white-2;
+  display: flex;
+  &.default {
+    background: #fff;
+  }
+  &.info {
+    border-color: $secondary-1;
+    background: $blue-1;
+    * {
+      color: $secondary-2;
+    }
+  }
+  &.success {
+    border-color: $primary-1;
+    background: $green-1;
+    * {
+      color: $primary-2;
+    }
+  }
+  &.warning {
+    border-color: $yellow-2;
+    background: $yellow-1;
+    * {
+      color: $yellow-3;
+    }
+  }
+  &.block {
+    border-color: $red-2;
+    background: $red-1;
+    * {
+      color: $red-3;
+    }
+  }
+  .icon {
+    margin-right: 15px;
+  }
+  .content {
+    h4 {
+      margin: 0;
+      margin-bottom: 5px;
+      color: $black;
+    }
+    p {
+      font-size: .8rem;
+      color: $grey-2;
+      margin: 0;
+    }
+  }
+}

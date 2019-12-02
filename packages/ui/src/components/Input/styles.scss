@@ -1,0 +1,61 @@
+@import '../../styles/colors';
+
+.input {
+  width: 100%;
+  &.inline {
+    display: flex;
+    .wrapper {
+      margin-left: auto;
+      min-width: 20rem;
+    }
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9rem;
+  }
+  .infoText {
+    font-size: .9rem;
+    margin-top: 3px;
+    color: $grey-1;
+  }
+  .errorText {
+    font-size: .9rem;
+    margin-top: 3px;
+    color: $red-3 
+  }
+  .wrapper {
+    padding: 8px 10px;
+    border: 2px solid $white-4;
+    display: flex;
+    cursor: pointer;
+    &.focused{
+      border-color: darken($primary-2, 10%)
+    }
+    &.error {
+      background: rgb(253, 237, 239);
+      border-color: $red-2;
+    }
+    &.left {
+      border-left: none;
+    }
+    &.right {
+      border-right: none;
+    }
+    input {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      outline: none;
+      flex: 1;
+      &::placeholder {
+        color: grey;
+      }
+    }
+    i {
+      margin-right: 15px;
+      color: $grey-1;
+    }
+  }
+}

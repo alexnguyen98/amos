@@ -1,0 +1,22 @@
+@import '../../styles/colors';
+
+.category {
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 50px;
+  border: 3px solid $white-3;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  color: $grey-1;
+  &.active {
+    background: $secondary-1;
+    border-color: $secondary-1;
+    color: white;
+  }
+  i {
+    margin-right: 5px;
+    color: currentColor;
+  }
+}

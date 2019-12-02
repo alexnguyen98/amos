@@ -1,0 +1,93 @@
+@import '../../styles/colors';
+@import '../../styles/_btn';
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border: 2px solid $white-3;
+  border-bottom-width: 3px;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  user-select: none;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  span {
+    font-size: inherit;
+  }
+  &.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &.fullWidth {
+    width: 100%;
+  }
+  &.slim {
+    font-size: .9rem;
+    padding: (.8 * $pd-btn-x) (.8 * $pd-btn-y);
+  }
+  &.medium {
+    font-size: 1rem;
+    padding: $pd-btn-x $pd-btn-y;
+  }
+  &.large {
+    font-size: 1.2rem;
+    padding: (1.2 * $pd-btn-x) (1.2 * $pd-btn-y);
+  }
+  &.default {
+    background: linear-gradient(rgb(255, 255, 255), rgb(249, 250, 251));
+    &:hover {
+      background: linear-gradient(rgb(250, 249, 249), rgb(243, 244, 245));
+    }
+  }
+  &.primary {
+    color: white;
+    background: $primary-1;
+    border-color: $primary-2;
+    &:hover {
+      background: $primary-2;
+    }
+  }
+  &.secondary {
+    color: white;
+    background: $secondary-1;
+    border-color: $secondary-2;
+    &:hover {
+      background: $secondary-2;
+    }
+  }
+  &.destructive {
+    color: white;
+    background: $red-2;
+    border-color: $red-3;
+    &:hover {
+      background: $red-3;
+    }
+  }
+  &.right {
+    margin-left: auto;
+  }
+  &.center {
+    margin: 0 auto;
+  }
+  * {
+    color: currentColor;
+  }
+  span {
+    font-weight: bold;
+  }
+  .none {
+    color: transparent;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 5px;
+    }
+  }
+}

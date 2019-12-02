@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: inherit;
+  border: inherit;
+}
+
+a {
+  text-decoration: none;
+}
